@@ -207,7 +207,8 @@ begin
     the DownloadFile function is explained in its implementation
   *)
 
-  sURL := 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTDrNfxGu1TJFvzKkbm-0Jy-RDYxMWvbA1sJjOqg4FuL3CSnLswI8x6E-cEVfO9WWEURk2IdSOUKDgu/pub?output=csv';
+  sURL := 'some-google-sheets-file-link';
+  // the Google Sheets file being used here should be published to Web. The queue takes about 3 minutes to refresh after that. 
   sFile := GetCurrentDir + '\files\Dloads.csv';
 
   if DownloadFile( sURL, sFile ) then
